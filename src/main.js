@@ -20,9 +20,11 @@ function showResults() {
   let promise1 = doctorLookup.getDoctor(condition);
   let promise2 = doctorLookup.getDoctor(doctorName);
 
+
   promise1.then(function(response) {
     let body = JSON.parse(response);
-    let doctorByCondition = body.main.profile.specialties;
+    let doctorByCondition = body.main.profile;
+    console.log(doctorByCondition);
   });
 
   promise2.then(function(response) {
