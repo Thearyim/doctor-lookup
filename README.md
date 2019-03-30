@@ -7,31 +7,31 @@
 _This is a web application that provides an API calls to search for doctor information using the BetterDoctor API in Portland area. Users can search for doctors by specialty or name._
 
 ## Specs
-    1. The website does an API call to retrieve the JSON object data from the server in the Portland area.
+1. The website does an API call to retrieve the JSON object data from the server in the Portland area.<br/>
 
-    2. A user can enter a medical issue to receive a list of doctors in the Portland area that fit the search query.
-    _Example Input:_
-      A user enters their medical issues
-    _Example Output:_
-      The application displays a list of doctors that fits the search query.
+2. A user can enter a medical issue to receive a list of doctors in the Portland area that fit the search query.<br/>
+    _Example Input:_<br/>
+      A user enters their medical issues<br/>
+    _Example Output:_<br/>
+      The application displays a list of doctors that fits the search query.<br/>
 
-    3. A user can enter a name to receive a list of doctors in the Portland area that fit the search query.
-    _Example Input:_
-      A user enters the name of a doctor
-    _Example Output:_
-      The application displays a list of doctors that fits the search query.
+3. A user can enter a name to receive a list of doctors in the Portland area that fit the search query.<br/>
+    _Example Input:_<br/>
+      A user enters the name of a doctor<br/>
+    _Example Output:_<br/>
+      The application displays a list of doctors that fits the search query.<br/>
 
-    4. The user can view the list of specialties and information for all doctors.
-    _Example Input:_
-      A user selects a doctor
-    _Example Output:_
-      The application displays a list of information about each doctor: first name, last name, address, phone number, website and whether or not the doctor is accepting new patients.
-      
-    5. Application will notify the user if there's not response that fits the search query.
-    _Example Input:_
-      A user inputs a search that does not match any doctors
-    _Example Output:_
-      The application displays a message that no result meet the search criteria.
+4. The user can view the list of specialties and information for all doctors.<br/>
+    _Example Input:_<br/>
+      A user selects a doctor<br/>
+    _Example Output:_<br/>
+      The application displays a list of information about each doctor: first name, last name, address, phone number, website and whether or not the doctor is accepting new patients.<br/>
+
+5. Application will notify the user if there's not response that fits the search query.<br/>
+    _Example Input:_<br/>
+      A user inputs a search that does not match any doctors<br/>
+    _Example Output:_<br/>
+      The application displays a message that no result meet the search criteria.<br/>
 
 ## Setup/Installation Requirements
 
