@@ -18,7 +18,7 @@ module.exports = {
     new UglifyJsPlugin({ sourceMap: true }),
     new CleanWebpackPlugin(['dist']),
     new HtmlWebpackPlugin({
-      title: 'doctor-lookup',
+      title: 'doctor',
       template: './src/index.html',
       inject: 'body'
     }),
@@ -39,7 +39,7 @@ module.exports = {
           /node_modules/,
           /spec/
         ],
-        loader: "eslint-loader"
+        // loader: "eslint-loader"
       },
       {
         test: /\.js$/,
