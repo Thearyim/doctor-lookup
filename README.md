@@ -11,25 +11,25 @@ _This is a web application that provides an API calls to search for doctor infor
 
 2. A user can enter a medical issue to receive a list of doctors in the Portland area that fit the search query.<br/>
     _Example Input:_<br/>
-      A user enters their medical issues<br/>
+      A user enters their medical issues.<br/>
     _Example Output:_<br/>
       The application displays a list of doctors that fits the search query.<br/>
 
 3. A user can enter a name to receive a list of doctors in the Portland area that fit the search query.<br/>
     _Example Input:_<br/>
-      A user enters the name of a doctor<br/>
+      A user enters the name of a doctor.<br/>
     _Example Output:_<br/>
       The application displays a list of doctors that fits the search query.<br/>
 
 4. The user can view the list of specialties and information for all doctors.<br/>
     _Example Input:_<br/>
-      A user selects a doctor<br/>
+      A user selects a doctor.<br/>
     _Example Output:_<br/>
       The application displays a list of information about each doctor: first name, last name, address, phone number, website and whether or not the doctor is accepting new patients.<br/>
 
 5. Application will notify the user if there's not response that fits the search query.<br/>
     _Example Input:_<br/>
-      A user inputs a search that does not match any doctors<br/>
+      A user inputs a search that does not match any doctors.<br/>
     _Example Output:_<br/>
       The application displays a message that no result meet the search criteria.<br/>
 
@@ -39,12 +39,12 @@ Requirements Software
 
 _Node.js is required for the npm commands to run. Must have Node.js installed. No servers are required for the running of this application._
 
-1. Clone this repository: $ git clone https://github.com/Thearyim/doctor-lookup_
-2. Navigate to root project directory in the terminal._
-3. Input npm install into the terminal to install dependancies._
-4. Create your own .env file in the root folder and initialize a new API Key variable with "exports.apiKey = KEYGOESHERE"._
-5. Input npm run build to build the application._
-6. Input npm run start to start the application._
+1. Clone this repository: $ git clone https://github.com/Thearyim/doctor-lookup
+2. Navigate to root project directory in the terminal.
+3. Input npm install into the terminal to install dependancies.
+4. Create your own .env file in the root folder and initialize a new API Key variable with "exports.apiKey = KEYGOESHERE".
+5. Input npm run build to build the application.
+6. Input npm run start to start the application.
 
 ## Known Bugs
 
