@@ -23,8 +23,6 @@ export default class DoctorLookup {
         let doctorSpecialty = doctors[i].specialties[0].description;
         let specialtyTerms = this.splitTerms(doctorSpecialty);
         let conditionTerms = this.splitTerms(condition);
-        // console.log(specialtyTerms);
-        // console.log(conditionTerms);
         for (let j = 0 ; j < conditionTerms.length ; j++) {
           if (specialtyTerms.includes(conditionTerms[j])) {
             matchingDoctors.push(doctors[i]);
@@ -32,7 +30,7 @@ export default class DoctorLookup {
           }
         }
       }
-      console.log(`doctors matching condition: ${matchingDoctors.length}`);
+      //console.log(`doctors matching condition: ${matchingDoctors.length}`);
       return matchingDoctors;
     }
 
@@ -43,8 +41,6 @@ export default class DoctorLookup {
         let doctorLastName = doctors[i].profile.last_name;
         let doctorNameTerms = this.splitTerms(`${doctorFirstName} ${doctorLastName}`);
         let nameTerms = this.splitTerms(name);
-        console.log(doctorNameTerms);
-        console.log(nameTerms);
         for (let j = 0 ; j < nameTerms.length ; j++) {
           if (doctorNameTerms.includes(nameTerms[j])) {
             matchingDoctors.push(doctors[i]);
@@ -53,7 +49,7 @@ export default class DoctorLookup {
         }
 
       }
-      console.log(`doctors matching Name: ${matchingDoctors.length}`);
+      //console.log(`doctors matching Name: ${matchingDoctors.length}`);
       return matchingDoctors;
     }
 

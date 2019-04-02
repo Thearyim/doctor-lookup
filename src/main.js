@@ -20,14 +20,10 @@ $(document).ready(function() {
 
   function showResults() {
     let doctorLookup = new DoctorLookup();
-    console.log("executing 'getDoctor' API method");
     let promise1 = doctorLookup.getDoctors();
 
     promise1.then(function(response) {
-      console.log("response received from 'getDoctor' API method");
-      console.log("parse response");
       let body = JSON.parse(response);
-      console.log("response parsed successfully:");
       let doctors = body.data;
       if (condition != "") {
         doctors = doctorLookup.filterByCondition(doctors, condition);
@@ -35,7 +31,7 @@ $(document).ready(function() {
       if (doctorName != "") {
         doctors = doctorLookup.filterByName(doctors, doctorName);
       }
-      
+
       let html = '';
       if (doctors.length == 0) {
         html = '<div>There are no doctors that match your search criteria.</div>';
@@ -66,25 +62,6 @@ $(document).ready(function() {
         <div>Website: <a href="${practice.website}">${practice.name}</a>
         </div>
     </div>`;
-    // <p>${doctor.profile.dynamic_bio}</p>
-    // <table>
-    //     <tr>
-    //
-    //         <td><a href="${data.attribution_url}" target="_new">${data.attribution_url}</a></td>
-    //     </tr>
-    //     <tr>
-    //         <th>Picture</th>
-    //         <td><img src='${doctor.profile.image_url}'></img></td>
-    //     </tr>
-    //     <tr>
-    //         <th>Specialties</th>
-    //         <td>
-    //         ${doctor.specialties}
-    //         ${name}<br>
-    //         ${doctor.specialties}
-    //         </td>
-    //     </tr>
-    // </table>`;
 
     return html;
   }
